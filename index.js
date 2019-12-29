@@ -65,7 +65,7 @@ const server = http.createServer((req,res)=>{
                 `);
             }
         }else{
-            if(getQuery != {})
+            if(getQuery != {} && filePath =='/search.html')
             {
                 let requestURL = `${domain}${param1}${getQuery['item']}${param2}`;
                 console.log(requestURL);
